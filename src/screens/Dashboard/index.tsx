@@ -34,11 +34,26 @@ export function Dashboard() {
           <Icon name="power" />
         </UserWrapper>
       </Header>
-      
+
       <HighlightCards>
-        <HighlightCard />
-        <HighlightCard />
-        <HighlightCard />
+        <HighlightCard
+          type="up"
+          title="Entrada"
+          amount="2500"
+          lastTransaction="Ontem dia tal"
+        />
+        <HighlightCard
+          type="down"
+          title="Saídas"
+          amount="2500"
+          lastTransaction="Ontem dia tal"
+        />
+        <HighlightCard
+          type="total"
+          title="Total"
+          amount="2500"
+          lastTransaction="Ontem dia tal"
+        />
       </HighlightCards>
     </Container>
   );
