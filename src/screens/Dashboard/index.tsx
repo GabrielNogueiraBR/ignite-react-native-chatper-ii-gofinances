@@ -34,6 +34,7 @@ export function Dashboard() {
           <Icon name="power" />
         </UserWrapper>
       </Header>
+      
       <HighlightCards>
         <HighlightCard />
         <HighlightCard />
