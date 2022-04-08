@@ -4,7 +4,7 @@
  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=whit">
 </p>
 <p align="center">
- <a href="https://www.figma.com/file/xsaxUO4zc0m2uCfsKezfma/GoFinances-Ignite-(Copy)"><img alt="Qries" src="hhttps://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>
+ <a href="https://www.figma.com/file/xsaxUO4zc0m2uCfsKezfma/GoFinances-Ignite-(Copy)"><img alt="Qries" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>
 </p>
           
           
