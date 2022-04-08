@@ -2,7 +2,7 @@
 Repository created to save the GoFinances project develop during the React Native course on Rocketseat.
         
 <p align="center">
- <img src="https://user-images.githubusercontent.com/30303558/162344391-0b2adb60-8d34-47fe-8df0-5c08595a9ae2.png" width="75%">
+ <img src="https://user-images.githubusercontent.com/30303558/162344391-0b2adb60-8d34-47fe-8df0-5c08595a9ae2.png" width="80%">
 </p>
 <p align="center">          
  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
