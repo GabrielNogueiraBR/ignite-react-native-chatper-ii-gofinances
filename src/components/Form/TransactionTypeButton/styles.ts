@@ -10,7 +10,7 @@ interface IconsProps {
 
 interface ContainerProps {
   type: "up" | "down";
-  isActive: boolean;
+  activeType: "up" | "down" | "none";
 }
 
 export const Container = styled(TouchableOpacity)<ContainerProps>`
@@ -20,19 +20,32 @@ export const Container = styled(TouchableOpacity)<ContainerProps>`
   align-items: center;
   justify-content: center;
 
-  border: 1.5px solid ${({ theme }) => theme.colors.text};
-  border-width: ${({ isActive }) => isActive ? 0 : 1.5}px;
   border-radius: 5px;
-
   padding: 16px;
 
-  ${({isActive, type}) => isActive && type === 'up' && css`
-    background-color: ${({theme}) => theme.colors.success_light};
-  `}
+  border: 1.5px solid ${({ theme }) => theme.colors.text};
 
-  ${({isActive, type}) => isActive && type === 'down' && css`
-    background-color: ${({theme}) => theme.colors.attention_light};
-  `}
+  ${({ activeType, type }) =>
+    activeType !== type &&
+    css`
+      border: 1.5px solid transparent;
+    `}
+
+  ${({ activeType, type }) =>
+    activeType === type &&
+    type === "up" &&
+    css`
+      border: 1.5px solid ${({ theme }) => theme.colors.success_light};
+      background-color: ${({ theme }) => theme.colors.success_light};
+    `}
+
+  ${({ activeType, type }) =>
+    activeType === "down" &&
+    type === "down" &&
+    css`
+      border: 1.5px solid ${({ theme }) => theme.colors.attention_light};
+      background-color: ${({ theme }) => theme.colors.attention_light};
+    `}
 `;
 
 export const Icon = styled(Feather)<IconsProps>`

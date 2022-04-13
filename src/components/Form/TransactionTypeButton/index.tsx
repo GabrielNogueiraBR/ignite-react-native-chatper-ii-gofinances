@@ -11,17 +11,22 @@ const icons = {
 interface Props extends TouchableOpacityProps {
   title: string;
   type: "up" | "down";
-  isActive: boolean;
+  activeType: "up" | "down" | "none";
 }
 
 export function TransactionTypeButton({
   title,
   type,
-  isActive,
+  activeType,
   ...rest
 }: Props) {
   return (
-    <Container isActive={isActive} type={type} {...rest}>
+    <Container
+      activeType={activeType}
+      type={type}
+      activeOpacity={0.7}
+      {...rest}
+    >
       <Icon name={icons[type]} type={type} />
       <Title>{title}</Title>
     </Container>
