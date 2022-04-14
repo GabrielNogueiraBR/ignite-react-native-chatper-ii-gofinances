@@ -27,6 +27,7 @@ export const Container = styled(TouchableOpacity)<ContainerProps>`
 
   ${({ activeType, type }) =>
     activeType !== type &&
+    activeType !== "none" &&
     css`
       border: 1.5px solid transparent;
     `}
