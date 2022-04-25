@@ -36,10 +36,7 @@ export function Register() {
     name: "Categoria",
   });
 
-  const {
-    control,
-    handleSubmit
-  } = useForm();
+  const { control, handleSubmit } = useForm();
 
   const handleTransactionsTypeSelect = (type: "up" | "down" | "none") => {
     setTransactionType(type);
@@ -58,9 +55,9 @@ export function Register() {
       name: form.name,
       amount: form.amount,
       transactionType,
-      category: category.key
-    }
-  }
+      category: category.key,
+    };
+  };
 
   return (
     <Container>
@@ -70,8 +67,20 @@ export function Register() {
 
       <Form>
         <Fields>
-          <InputForm name="name" control={control} placeholder="Nome" />
-          <InputForm name="amount" control={control} placeholder="Preço" />
+          <InputForm
+            name="name"
+            control={control}
+            placeholder="Nome"
+            autoCapitalize="sentences"
+            autoCorrect={false}
+          />
+
+          <InputForm
+            name="amount"
+            control={control}
+            placeholder="Preço"
+            keyboardType="numeric"
+          />
 
           <TransactionsTypes>
             <TransactionTypeButton
