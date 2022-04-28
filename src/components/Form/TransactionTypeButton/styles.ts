@@ -14,15 +14,10 @@ interface ContainerProps {
   activeType: "up" | "down" | "none";
 }
 
-export const Container = styled(RectButton)<ContainerProps>`
+export const Container = styled.View<ContainerProps>`
   width: 48%;
 
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
   border-radius: 5px;
-  padding: 16px;
 
   border: 1.5px solid ${({ theme }) => theme.colors.text};
 
@@ -48,6 +43,14 @@ export const Container = styled(RectButton)<ContainerProps>`
       border: 1.5px solid ${({ theme }) => theme.colors.attention_light};
       background-color: ${({ theme }) => theme.colors.attention_light};
     `}
+`;
+
+export const Button = styled(RectButton)`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
 `;
 
 export const Icon = styled(Feather)<IconsProps>`
